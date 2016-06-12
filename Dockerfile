@@ -19,7 +19,7 @@
 # docker run --interactive --tty --entrypoint=/bin/bash marsmensch/zcash-cpuminer
 #
 # 2) run the zcashd daemon 
-# /usr/local/bin/zcashd -daemon
+# zcashd -daemon
 #
 # 3) check the current state
 # zcash-cli getinfo
