@@ -2,7 +2,7 @@
 # Dockerfile for the zcash alpha and cpuminer
 # usage: docker run marsmensch/zcash-cpuminer
 #
-# tip me at 1PboFDkBsW2i968UnehWwcSrM9Djq5LcLB
+# tip me BTC at 1PboFDkBsW2i968UnehWwcSrM9Djq5LcLB
 #▒███████▒ ▄████▄   ▄▄▄        ██████  ██░ ██ 
 #▒ ▒ ▒ ▄▀░▒██▀ ▀█  ▒████▄    ▒██    ▒ ▓██░ ██▒
 #░ ▒ ▄▀▒░ ▒▓█    ▄ ▒██  ▀█▄  ░ ▓██▄   ▒██▀▀██░
@@ -16,7 +16,7 @@
 #
 # Step-by-step to start mining interactively on testnet
 # 1) start the container
-# docker run --interactive --tty --entrypoint=/bin/bash marsmensch/zcash-cpuminer
+# docker run --interactive --tty --entrypoint=/bin/bash marsmensch/docker-zcash
 #
 # 2) run the zcashd daemon 
 # zcashd -daemon
@@ -30,7 +30,7 @@ MAINTAINER Florian Maier <contact@marsmenschen.com>
 
 ENV GIT_URL        git://github.com/zcash/zcash.git
 ENV ZCASH_VERSION  zc.v0.11.2.z6
-ENV REFRESHED_AT   2016-06-11
+ENV REFRESHED_AT   2016-07-10
 ENV ZCASH_CONF     /root/.zcash/zcash.conf
 
 # install dependencies
