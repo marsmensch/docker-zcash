@@ -29,8 +29,8 @@ FROM		ubuntu:14.04
 MAINTAINER Florian Maier <contact@marsmenschen.com>
 
 ENV GIT_URL        git://github.com/zcash/zcash.git
-ENV ZCASH_VERSION  zc.v0.11.2.z6
-ENV REFRESHED_AT   2016-07-10
+ENV ZCASH_VERSION  zc.v0.11.2.z7
+ENV REFRESHED_AT   2016-07-24
 ENV ZCASH_CONF     /root/.zcash/zcash.conf
 
 # install dependencies
