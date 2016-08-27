@@ -7,6 +7,7 @@ usage: docker run marsmensch/zcash-cpuminer
 ```
 
 Step-by-step to start mining interactively on testnet
+
 1) start the container
 ```
 docker run --interactive --tty --entrypoint=/bin/bash marsmensch/docker-zcash
