@@ -30,7 +30,7 @@ MAINTAINER Florian Maier <contact@marsmenschen.com>
 
 ENV GIT_URL        git://github.com/zcash/zcash.git
 ENV ZCASH_VERSION  zc.v0.11.2.z9
-ENV REFRESHED_AT   2016-08-09
+ENV REFRESHED_AT   2016-08-27
 ENV ZCASH_CONF     /root/.zcash/zcash.conf
 
 # install dependencies
