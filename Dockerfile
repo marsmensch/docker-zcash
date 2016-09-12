@@ -1,5 +1,5 @@
 #
-# Dockerfile for the zcash alpha and cpuminer
+# Dockerfile for the zcash beta and integrated cpuminer
 # usage: docker run marsmensch/zcash-cpuminer
 #
 # tip me BTC at 1PboFDkBsW2i968UnehWwcSrM9Djq5LcLB
