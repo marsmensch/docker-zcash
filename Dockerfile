@@ -31,8 +31,8 @@ FROM		ubuntu:14.04
 MAINTAINER Florian Maier <contact@marsmenschen.com>
 
 ENV GIT_URL        git://github.com/zcash/zcash.git
-ENV ZCASH_VERSION  v1.0.0-beta2
-ENV REFRESHED_AT   2016-09-12
+ENV ZCASH_VERSION  v1.0.0
+ENV REFRESHED_AT   2016-10-29
 ENV ZCASH_CONF     /root/.zcash/zcash.conf
 
 # install dependencies
@@ -54,7 +54,7 @@ RUN echo "check_certificate = off" > /root/.wgetrc && mkdir -p /opt/code/; cd /o
 # generate a dummy config    
 RUN PASS=$(date | md5sum | cut -c1-24); mkdir -p /root/.zcash/; \
     printf '%s\n%s\n%s\n%s\n%s\n' "rpcuser=zcashrpc" "rpcpassword=${PASS}" \
-    "testnet=1" "addnode=betatestnet.z.cash" "gen=1" >> ${ZCASH_CONF}     
+    "testnet=1" "addnode=mainnet.z.cash" "gen=1" >> ${ZCASH_CONF}     
 
 # no parameters display help
 ENTRYPOINT ["/usr/local/bin/zcashd"]
